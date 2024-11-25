@@ -1,0 +1,31 @@
+{
+  "name": "wonderwp/response",
+  "description": "WonderWp Response Component",
+  "type": "library",
+  "keywords": ["response", "WonderWp", "WordPress"],
+  "homepage": "https://github.com/wonderwp/response",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeremy Desvaux",
+      "homepage": "https://jdmweb.com"
+    },
+    {
+      "name": "WonderWp Community",
+      "homepage": "http://wonderwp.net/Contribution/Contributors.html"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "johnpbloch/wordpress": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {"WonderWp\\Component\\CPT\\": "src"},
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "minimum-stability": "dev"
+}
