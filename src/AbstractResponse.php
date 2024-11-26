@@ -31,7 +31,7 @@ abstract class AbstractResponse implements ResponseInterface, JsonSerializable
     }
 
     /** {@inheritDoc} */
-    public function setCode(int $code): ResponseInterface
+    public function setCode(int $code): static
     {
         $this->code = $code;
 
@@ -45,7 +45,7 @@ abstract class AbstractResponse implements ResponseInterface, JsonSerializable
     }
 
     /** {@inheritDoc} */
-    public function setMsgKey(string $msgKey): ResponseInterface
+    public function setMsgKey(string $msgKey): static
     {
         $this->msgKey = $msgKey;
 
@@ -80,7 +80,7 @@ abstract class AbstractResponse implements ResponseInterface, JsonSerializable
     }
 
     /** {@inheritDoc} */
-    public function setError(?\Throwable $error): ResponseInterface
+    public function setError(?\Throwable $error): static
     {
         $this->error = $error;
 
