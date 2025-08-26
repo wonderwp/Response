@@ -33,7 +33,7 @@ trait SerializableResponse
         if (!empty($jsonSerialized['msgKey'])) {
             $message = [
                 'key' => $jsonSerialized['msgKey'],
-                'domain' => 'ff-checkout',
+                'domain' => 'wonderwp',
                 'translated' => __($jsonSerialized['msgKey'], $this->textDomain),
             ];
             unset($jsonSerialized['msgKey']);
