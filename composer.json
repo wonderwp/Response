@@ -18,9 +18,6 @@
   "require": {
     "php": "^8.3"
   },
-  "require-dev": {
-    "johnpbloch/wordpress": "^7.0"
-  },
   "autoload": {
     "psr-4": {"WonderWp\\Component\\Response\\": "src"},
     "exclude-from-classmap": [
